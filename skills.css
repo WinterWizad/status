@@ -1,0 +1,93 @@
+
+    
+    
+    :root{
+        --color:antiquewhite;
+        --bg-color: black ;
+        --border: 1px rgb(212, 0, 255) solid;
+        --box-color:#3566ec;
+    
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: var(--bg-color); /* Blue theme */
+        color: var(--color);
+        margin: 0;
+        padding: 0;
+        background-image: url("assets/img/statue.png");
+    }
+    .container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        text-align: center;
+        color: var(--color);
+        width: 100%;
+        background-color: var(--box-color);
+    }
+    #skills-list{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .skill {
+        width:20vw;
+        display: flex;
+        gap:2vw;
+        background-color: var(--box-color);
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+
+    .skill input[type="range"] {
+        width: 15vw;
+        
+    }
+    .skill-name {
+        flex: 1;
+    }
+    .skill-level {
+        font-weight: bold;
+        width: 50px;
+    }
+    .add-skill {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: var(--box-color);
+        border: none;
+        color: var(--color);
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    @media  only screen and (max-width:800px) {
+        body{
+            /* background: none; */
+            background-image: url("assets/img/mobile-statue.png");
+            /* background-repeat:no-repeat; */
+        }
+
+        .skill{
+            width:90vw;
+        }
+        .skill input[type="range"] {
+            background:var(--color);
+            
+            width: 50vw;
+            
+        }
+        
+    .skill-level {
+        width: 5vw;
+    }
+        
+    }
