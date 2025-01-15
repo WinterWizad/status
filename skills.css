@@ -3,10 +3,16 @@
     
     :root{
         --color:antiquewhite;
-        --bg-color: black ;
+        --bg-color: rgb(30, 26, 26) ;
         --border: 1px rgb(212, 0, 255) solid;
         --box-color:#3566ec;
+        --pj-color:blue;
+        --pj-bg-color:aliceblue;
     
+    }
+    *{
+        margin: 0%;
+        padding: 0%;
     }
     body {
         font-family: Arial, sans-serif;
@@ -15,45 +21,114 @@
         margin: 0;
         padding: 0;
         background-image: url("assets/img/statue.png");
+
     }
-    .container {
-        width: 100%;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
+    .big-container{
+        margin-top: 0%;
+        background-color: var(--bg-color);
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        row-gap: 1rem;
+
     }
+   
+
+    .my-intro-container{
+        width: 100vw;
+        display: flex;
+        gap:1rem;
+        height:min-content;
+        /* border: var(--border); */
+
+    }
+    
+    .profile-img{
+    filter: none;
+    width:30vw;
+    height:60vh;
+    border-radius: none;
+}
+.my-description{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* border: var(--border); */
+}
+
+.my-name{
+    font-size: xx-large;
+    color:azure;
+    font-weight: bold;
+    font-family: Helvetica;
+    
+}
+.my-detail{
+    color: floralwhite;
+}
+.my-social-link{
+    font-size: large;
+}
+
+#skills-h1{
+    width: 100vw;
+    margin: 1vh;
+background-color: var(--bg-color);
+}
+
+    .skills-container {
+        margin: auto;
+        width: 100%;
+       display: flex;
+       height:min-content;
+       /* border: var(--border); */
+    }
+    .diff-container{
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1em;
+    }
+
     h1 {
         text-align: center;
         color: var(--color);
         width: 100%;
         background-color: var(--box-color);
+        margin-bottom: 1vh;
+
     }
-    #skills-list{
+    #skills-list,#pj-skills-list{
         display:flex;
-        flex-wrap: wrap;
         justify-content: space-between;
+        flex-direction: column;
     }
-    .skill {
-        width:20vw;
+    .skill,.pj-skill {
+        width:min-content;
         display: flex;
+        align-items: center;
         gap:2vw;
         background-color: var(--box-color);
         padding: 10px;
         margin: 10px 0;
         border-radius: 10px;
     }
+    .pj-skill{
+        
+        color: var(--pj-color);
+        background-color: var(--pj-bg-color);
+    }
 
-    .skill input[type="range"] {
+    .skill-range {
+        
         width: 15vw;
         
     }
+
     .skill-name {
-        flex: 1;
+        min-width:10vw;
+        max-width: 40vw;
+        height: auto;
     }
     .skill-level {
         font-weight: bold;
@@ -75,12 +150,54 @@
             background-image: url("assets/img/mobile-statue.png");
             /* background-repeat:no-repeat; */
         }
+        .profile-img{
+            width:45vw;
+            height:40vh;
+        }
+        
+.my-description{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.my-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1vh 1vw;
+}
+.my-name{
+    font-size: x-large;
+    
+}
+
+.my-titles{
+    display: flex;
+    flex-direction: column;
+}
+.my-title{
+    font-size: large;
+}
+.my-social-links{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.my-social-link{
+    font-size: large;
+}
+
+
 
         .skill{
             width:90vw;
         }
-        .skill input[type="range"] {
-            background:var(--color);
+        .skill-name{
+            min-width:35vw;
+            max-width: 35vw;
+        }
+        .skill-range {
             
             width: 50vw;
             
