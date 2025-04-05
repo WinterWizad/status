@@ -1,181 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STATUS</title>
+    <meta name="description" content="Prajwal Kunwar's Portfolio - Web Developer | AI/ML Engineer | Computer Vision Developer">
+    <meta name="author" content="Prajwal Kunwar">
+    <title>Prajwal Kunwar's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/img/shadow.ico" type="image/x-icon">
-    <link rel="stylesheet" href="projects.css">
-    <link rel="stylesheet" href="skills.css">
 </head>
 
 <body>
-    <div class="big-container">
-    <h1>Introduction-Section</h1>
-    <div class="my-intro-container">
-
-        <div class="my-photo">
-            <img class="profile-img" src="assets/img/profile.jpg" alt="My photo">
-        </div>
-
-        <div class="my-description">
-
-            <div class="my-name">Prajwal Kunwar (PJ)</div>
-            <div class="my-detail">
-                Greetings to you, visitor! Please feel free to contact me if you need something!<br> 
-                Thank you for your valuable Attention and Time.<br><br>
-
-                <div class="my-titles">
-               <span> Iam a </span><span class="my-title"> Full Stack Developer ||  </span>
-            <span class="my-title">AI / ML Engineer ||  </span>
-             <span class="my-title">Comp. Vision developer </span>
+    <!-- Navigation Section -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2 style="color: #8e44ad; ">P.J</h2>
             </div>
-
-             <div class="my-social-links">
-             
-           <span> Social Links</span>
-            <a href="https://www.linkedin.com/in/prajwal-kunwar-a136ba1b9/"><span class="my-social-link">LinkedIn || </span></a>
-            <a href="https://github.com/WinterWizad"> <span class="my-social-link">Github ||</span></a>
-            <a href="https://www.facebook.com/prajwal.kunwar.338?mibextid=ZbWKwL"><span class="my-social-link"> Facebook || </span> </a>
-       
-            </div>
+            <ul class="nav-links">
+                <li class="nav-link"><a href="#about">About</a></li>
+                <li class="nav-link"><a href="#skills">Skills</a></li>
+                <li ><a href="#projects">Projects</a></li>
+                <li ><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        
-        </div>
+    </nav>
 
-    </div>
-</div>
-
-    <!-- <h1 id="skills-h1">Skills-Section</h1> -->
-<div class="skills-container">
-
-    <div class="diff-container">
-
-        <div class="pj-skills">
-        <h1 >PJ-Skills</h1>
-        <div id="pj-skills-list">
-           
-        </div>
-
-    </div>
-
-    <div class="your-skills">
-        <h1 >Your Skill-Status</h1>
-    <div id="skills-list">
-        <div class="skill">
-        <div class="skill-name">UNSKILLED</div>
-        <input type="range" min="1" max="100" value="100" class="skill-range">
-        <div class="skill-level">100</div>
-        <!-- Skills will be added here dynamically -->
-    </div>
-   
-    <button class="add-skill" onclick="addSkill()">Add Skill</button>
-</div>
-
-</div>
-
-</div>
-</div>
-
-<h1>Projects-Status (Click on Project's name)</h1>
-<div class="projects-container"> 
-    <div class="adventurer">
-        <img src="assets/img/adventures.webp">
-        <div class="project-text">
-
-        <a href="https://prajwalpython.pythonanywhere.com/">Adventuring Guild  Platform</a>
-        <div class="description"> </div>
-        </div>
-    </div>
-
-        <div class="hr">
-            <img src="assets/img/hr.png">
-            <div class="project-text">    
-            <a href="https://pjhr.vercel.app/">Human Resource Management</a>
-            <div class="description"> </div>
-            </div>
-        </div>
-
-        <div class="Image Classifier">
-            <img src="assets/img/imageclassifier.png">
-            <div class="project-text">
+    <!-- Hero Section -->
+    <header class="hero" id="about">
+        <div class="hero-content">
+            <img class="hero-img" src="assets/img/profile.jpg" alt="Prajwal Kunwar's Profile Picture">
+            <div class="hero-text">
+                <h1>Hello, I'm <span id="name">
+                    <span style="display: inline; color: #8e44ad;">P</span>
+                    <span style="display: inline;">ra</span>
+                    <span style="display: inline; color: #8e44ad;">J</span>
+                    <span style="display: inline;">wal Kunwar</span>
+                </span></h1>
     
-            <a href="https://pjimageclassifier.vercel.app/">Image Classifier (Comp. Vision)</a>
-            <div class="description"> </div>
+                <p>A passionate <strong>Full Stack Developer</strong>, <strong>AI Developer</strong>, and <strong>Project Manager</strong>.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/prajwal-kunwar-a136ba1b9/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/WinterWizad" target="_blank">GitHub</a>
+                    <a href="https://www.facebook.com/prajwal.kunwar.338?mibextid=ZbWKwL" target="_blank">Facebook</a>
+                </div>
             </div>
         </div>
+    </header>
 
-        <div class="restaurantly">
-            <img src="assets/img/restaurantly.png">
-            <div class="project-text">
-    
-            <a href="https://pjrestaurant.vercel.app/">Restaurant by PJ (Django)</a>
-            <div class="description"></div>
-    
-        </div>
-    </div>
-    <div class="epidemic-watch">
-        <img src="assets/img/epicit.png">
-        <div class="project-text">
-
-        <a href="https://epicit.vercel.app/">Epidemic Watch (Django & ML)</a>
-        <div class="description"></div>
-    </div>
-</div>
-
-
-    <div class="khoon">
-        <img src="assets/img/khoon.png">
-        <div class="project-text">
-
-        <a href="https://pjblood.vercel.app/">Blood Donation Platform</a>
-        <div class="description"> </div>
-    </div>
-</div>
-
-   
-    <div class="django-api">
-        <img src="assets/img/pjapi.png">
-        <div class="project-text">
-
-        <a href="https://pjapi.vercel.app/?format=json">Django Rest Framework</a>
-        <div class="description"></div>
-    </div></div>
-
-
-    <div class="PJgames">
-        <img src="assets/img/pjgames.png">
-                <div class="project-text">
-
-                <a href="https://pjgames.vercel.app">PJ-MINI  Games </a>
-                <div class="description"></div>
-    </div>
-
- </div>
-
-    <div class="naruto">
-        <img src="assets/img/naruto.png">
-        <div class="project-text">
-
-        <a href="https://narutogame.vercel.app/">Naruto Game (JavaScript)</a>
-        <div class="description"></div>
-
-    </div></div>
-
-
-
-    <div class="maps">
-        <img src="assets/img/maps.png">
-                <div class="project-text">
-
-                <a href="https://pjmaps.vercel.app/">Leaflet Map & Routing</a>
-                <div class="description"></div>
-
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>Full Stack Development</h3>
+                <p>Expert in front-end and back-end technologies including HTML, CSS, JavaScript, and various backend frameworks.</p>
             </div>
-    </div>
+            <div class="skill-card">
+                <h3>Project Management</h3>
+                <p>Leading teams for towards compleing a succesfull, high impact and technical projects is my passion!</p>
+            </div>
+            <div class="skill-card">
+                <h3>AI Engineering</h3>
+                <p>Developing ML models, implementing AI through computer vision like image and video processing solutions using OpenCV and other AI techniques.</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <a href="https://prajwalpython.pythonanywhere.com/" target="_blank">
+                    <img src="assets/img/adventures.webp" alt="Adventuring Guild Platform">
+                    <div class="project-info">
+                        <h3>Adventuring Guild Platform</h3>
+                        <p>A platform to manage and connect adventurers for various quests.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://pjhr.vercel.app/" target="_blank">
+                    <img src="assets/img/hr.png" alt="Human Resource Management">
+                    <div class="project-info">
+                        <h3>Human Resource Management</h3>
+                        <p>An HR management platform for handling employee data and payroll.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://pjimageclassifier.vercel.app/" target="_blank">
+                    <img src="assets/img/imageclassifier.png" alt="Image Classifier">
+                    <div class="project-info">
+                        <h3>Image Classifier</h3>
+                        <p>A machine learning-based image classifier for classifying images.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://pjrestaurant.vercel.app/" target="_blank">
+                    <img src="assets/img/restaurantly.png" alt="Restaurant by PJ">
+                    <div class="project-info">
+                        <h3>Restaurant by PJ</h3>
+                        <p>A complete restaurant management system built with Django.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
 
-</div>
-<script src="script.js"></script>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <p>If you'd like to get in touch, feel free to send me a message via email or connect with me on my social media!</p>
+        <div class="contact-info">
+            
+            <p>Email: <a href="mailto:prajwal.kunwar@kharaayo.com">prajwal.kunwar@kharaayo.com</a></p>
+            <p>Phone: <a href="tel:9779804955207">+977 9804955207</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Prajwal Kunwar.<br> All rights reserved.</p>
+    </footer>
+
 </body>
+
 </html>
